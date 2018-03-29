@@ -1,0 +1,11 @@
+export const SIZE_W = window.innerWidth;
+export const SIZE_H = window.innerHeight;
+export const ROAD_WIDTH = 70;
+export const ACCURACY = 20;
+export const RAY_LENGTH = 60;
+export const RAY_WIDTH = 3;
+export const STEP = 5;
+export const START_RADIUS = 100;
+export const ROBOT_LENGTH = 30;
+export const ROBOT_WIDTH = 10;
+export const FPS = 20;
