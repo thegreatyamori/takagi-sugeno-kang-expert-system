@@ -16,7 +16,7 @@ canvas {
 }
 
 input[type="submit"]#launch, 
-input[type="submit"]#b_and_w {
+input[type="submit"]#bw {
 	background-color: grey;
 	border-width: 0;
 	margin: 10px;

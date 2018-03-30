@@ -1,17 +1,27 @@
 import TSK_expert_system from "./src/expert";
 import Robot from "./src/robot";
-import {set_color, find_xy, reset_paint} from "./src/painter";
-import {SIZE_W, SIZE_H, ROAD_WIDTH, ACCURACY, RAY_LENGTH, STEP, START_RADIUS, FPS} from "./src/constants";
+import {
+	set_color, 
+	find_xy, 
+	reset_paint
+} from "./src/painter";
+
+import {
+	SIZE_W, 
+	SIZE_H, 
+	START_RADIUS, 
+	FPS
+} from "./src/constants";
 
 let map;
-let b_and_w = true;
+let bw = true;
 
 const robot = new Robot(START_RADIUS, SIZE_H / 2, 0);
 
-const $paint   = document.querySelector("#paint");
-const $robot   = document.querySelector("#robot");
-const $b_and_w = document.querySelector("#b_and_w");
-const $launch  = document.querySelector("#launch");
+const $paint  = document.querySelector("#paint");
+const $robot  = document.querySelector("#robot");
+const $bw     = document.querySelector("#bw");
+const $launch = document.querySelector("#launch");
 
 const p = $paint.getContext("2d");
 const r = $robot.getContext("2d");
@@ -54,25 +64,23 @@ $launch.addEventListener("click", e => {
 });
 
 $robot.addEventListener("mousemove", e => {
-	find_xy("move", e, p, $paint);
+	find_xy("move", e, $paint);
 }, false);
 	
 $robot.addEventListener("mousedown", e => {
-	find_xy("down", e, p, $paint);
+	find_xy("down", e, $paint);
 }, false);
 	
 $robot.addEventListener("mouseup", e => {
-	find_xy("up", e, p, $paint);
+	find_xy("up", e, $paint);
 }, false);
 	
 $robot.addEventListener("mouseout", e => {
-	find_xy("out", e, p, $paint);
+	find_xy("out", e, $paint);
 }, false);
 
-$b_and_w.addEventListener("click", () => {
-	b_and_w = !b_and_w;
-
-	set_color(b_and_w);
-
-	$b_and_w.value = `change to ${b_and_w ? "black" : "white"}`;
+$bw.addEventListener("click", () => {
+	bw = !bw;
+	set_color(bw);
+	$bw.value = `change to ${bw ? "black" : "white"}`;
 });

@@ -12,7 +12,6 @@ export default class Robot {
 		this.sensors = [1, 1, 1, 1, 1];
 	}
 
-
 	draw(ctx) {
 		ctx.beginPath();
 		ctx.moveTo(this.x, this.y);

@@ -8,4 +8,4 @@ export const STEP = 5;
 export const START_RADIUS = 100;
 export const ROBOT_LENGTH = 30;
 export const ROBOT_WIDTH = 10;
-export const FPS = 20;
+export const FPS = 60;

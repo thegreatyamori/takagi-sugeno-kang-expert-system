@@ -33,7 +33,9 @@ function draw(ctx, color) {
 	ctx.closePath();
 }
 
-export function find_xy(res, e, ctx, canvas) {
+export function find_xy(res, e, canvas) {
+	let ctx = canvas.getContext("2d");
+
 	if (res == 'down') {
 		let rect = canvas.getBoundingClientRect();
 
