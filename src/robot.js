@@ -1,4 +1,4 @@
-import {ACCURACY, RAY_LENGTH, ROBOT_LENGTH, ROBOT_WIDTH, SIZE_W, STEP, RAY_WIDTH} from "./constants";
+import {ACCURACY, RAY_LENGTH, ROBOT_LENGTH, ROBOT_WIDTH, SIZE_W, STEP, RAY_WIDTH} from "./constants.js";
 
 export default class Robot {
 	constructor(x, y, angle) {
