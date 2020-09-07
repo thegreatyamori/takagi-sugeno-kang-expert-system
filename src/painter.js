@@ -1,4 +1,4 @@
-import {ROAD_WIDTH, START_RADIUS, SIZE_H, SIZE_W} from "./constants";
+import {ROAD_WIDTH, START_RADIUS, SIZE_H, SIZE_W} from "./constants.js";
 
 let currX = 0;
 let currY = 0;
