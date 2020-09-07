@@ -1,17 +1,17 @@
-import TSK_expert_system from "./src/expert";
-import Robot from "./src/robot";
+import TSK_expert_system from "./src/expert.js";
+import Robot from "./src/robot.js";
 import {
 	set_color, 
 	find_xy, 
 	reset_paint
-} from "./src/painter";
+} from "./src/painter.js";
 
 import {
 	SIZE_W, 
 	SIZE_H, 
 	START_RADIUS, 
 	FPS
-} from "./src/constants";
+} from "./src/constants.js";
 
 let map;
 let bw = true;
